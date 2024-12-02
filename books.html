@@ -5,6 +5,7 @@
 </head>
 <body>
     <script>
+        // JSON data
         const books = [
             {
                 "title": "The Great Gatsby",
@@ -20,13 +21,13 @@
             }
         ];
 
-        // Display the title of the first book
+        // (a) Display the title of the first book
         console.log("Title of the first book:", books[0].title);
 
-        // Display the author of the second book
+        // (b) Display the author of the second book
         console.log("Author of the second book:", books[1].author);
 
-        // Display the genres of all books
+        // (c) Display the genres of all books
         books.forEach((book, index) => {
             console.log(`Genres of book ${index + 1}:`, book.genres.join(", "));
         });
